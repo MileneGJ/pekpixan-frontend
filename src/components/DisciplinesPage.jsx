@@ -26,7 +26,7 @@ function DisciplinesPage() {
       <button className="action-button" onClick={() => setOpenModal(true)}>
         Registrar nueva disciplina
       </button>
-      <ul>
+      <ul className="discipline-list">
         {disciplineList.map((d, index) => (
           <li key={index}>
             <h2>{d.name}</h2>

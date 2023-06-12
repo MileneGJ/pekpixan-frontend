@@ -56,7 +56,7 @@ function DogDetails() {
             </div>
             <div>
               {dogInfo.evaluations?.map((e) => (
-                <p className="strongs-bar">{`${e._avg.grade}%`}</p>
+                <p className="strongs-bar">{`${e._avg.grade.toFixed(2)}%`}</p>
               ))}
             </div>
           </div>
@@ -79,7 +79,9 @@ function DogDetails() {
                 ?.slice(0)
                 .reverse()
                 .map((e) => (
-                  <p className="weakness-bar">{`${e._avg.grade}%`}</p>
+                  <p className="weakness-bar">{`${e._avg.grade.toFixed(
+                    2
+                  )}%`}</p>
                 ))}
             </div>
           </div>
